@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PIT201 | Data Warehousing</title>
+  <style>
+    :root { --navy:#102a43; --blue:#1769aa; --teal:#18a6a6; --light:#f3f7fb; --ink:#243b53; --muted:#627d98; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:Arial,Helvetica,sans-serif; color:var(--ink); line-height:1.6; background:var(--light); }
+    header { color:white; background:linear-gradient(120deg,var(--navy),var(--blue)); padding:28px 7% 38px; }
+    nav { display:flex; flex-wrap:wrap; gap:16px; margin-bottom:34px; }
+    nav a { color:white; text-decoration:none; font-weight:bold; font-size:.95rem; }
+    nav a:hover { text-decoration:underline; }
+    .tag { display:inline-block; padding:5px 12px; border:1px solid #ffffff80; border-radius:20px; font-size:.85rem; }
+    h1 { font-size:clamp(2rem,5vw,3.4rem); line-height:1.1; margin:15px 0; }
+    header p { max-width:720px; color:#e6f1fb; }
+    .meta { display:flex; flex-wrap:wrap; gap:10px; margin-top:22px; }
+    .meta span { background:#ffffff18; padding:8px 12px; border-radius:8px; }
+    main { width:min(1100px,90%); margin:30px auto 60px; }
+    section { background:white; padding:24px; margin:20px 0; border-radius:14px; box-shadow:0 4px 16px #102a4310; scroll-margin-top:18px; }
+    h2 { margin-top:0; color:var(--navy); border-bottom:2px solid #e5eef6; padding-bottom:10px; }
+    h3 { color:var(--blue); margin-bottom:5px; }
+    .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; }
+    .card { border:1px solid #e0eaf3; border-radius:10px; padding:16px; background:#fbfdff; }
+    .card p { margin-bottom:0; }
+    table { width:100%; border-collapse:collapse; }
+    th,td { text-align:left; padding:11px 10px; border-bottom:1px solid #e4edf5; vertical-align:top; }
+    th { background:#edf5fb; color:var(--navy); }
+    .table-wrap { overflow-x:auto; }
+    .note { background:#eaf8f8; border-left:4px solid var(--teal); padding:12px 15px; border-radius:6px; }
+    a { color:var(--blue); }
+    .button { display:inline-block; color:white; background:var(--blue); padding:10px 14px; border-radius:8px; text-decoration:none; font-weight:bold; margin:5px 5px 0 0; }
+    footer { text-align:center; padding:24px; color:#dbeafe; background:var(--navy); }
+    small { color:var(--muted); }
+    @media(max-width:600px) { section { padding:17px; } th,td { padding:8px; } }
+  </style>
+</head>
+<body>
+<header>
+  <nav aria-label="Main navigation">
+    <a href="#overview">Overview</a><a href="#outcomes">Outcomes</a><a href="#resources">Resources</a>
+    <a href="#schedule">Weekly Schedule</a><a href="#assessment">Assessment</a><a href="#contact">Contact</a>
+  </nav>
+  <span class="tag">AI & Data Science · R2023</span>
+  <h1>Data Warehousing</h1>
+  <p>A course website for learning data warehouse architecture, ETL and OLAP technologies, metadata, partitioning, dimensional modelling, schemas, and warehouse management.</p>
+  <div class="meta"><span><strong>Course Code:</strong> PIT201</span><span><strong>Total:</strong> 45 periods</span><span><strong>Units:</strong> 5</span></div>
+</header>
+
+<main>
+  <section id="overview">
+    <h2>Course Overview</h2>
+    <p><strong>Course:</strong> PIT201 – Data Warehousing</p>
+    <p><strong>Programme/Department:</strong> Artificial Intelligence and Data Science (AI&DS), SRM VEC</p>
+    <p><strong>Curriculum:</strong> R2023 · <strong>Teaching Plan:</strong> 45 periods (9 periods per unit)</p>
+    <h3>Course Objectives</h3>
+    <ul>
+      <li>Understand data warehouse architecture.</li>
+      <li>Understand OLAP technology.</li>
+      <li>Understand partitioning strategies.</li>
+      <li>Differentiate data warehouse schemas.</li>
+      <li>Understand the roles of process managers and system managers.</li>
+    </ul>
+  </section>
+
+  <section id="outcomes">
+    <h2>Course Outcomes</h2>
+    <p>By the end of this course, students will be able to:</p>
+    <ol>
+      <li>Design data warehouse architecture for given problems.</li>
+      <li>Apply OLAP technology.</li>
+      <li>Analyse partitioning strategies.</li>
+      <li>Critically analyse suitable schemas for a given problem.</li>
+      <li>Explain the roles of process managers and system managers.</li>
+    </ol>
+  </section>
+
+  <section id="resources">
+    <h2>Learning Resources</h2>
+    <div class="cards">
+      <div class="card"><h3>Prescribed Textbook</h3><p>Alex Berson and Stephen J. Smith, <em>Data Warehousing, Data Mining & OLAP</em>, Tata McGraw Hill, 2017 reprint.</p></div>
+      <div class="card"><h3>Dimensional Modelling</h3><p>Ralph Kimball, <em>The Data Warehouse Toolkit: The Complete Guide to Dimensional Modeling</em>, 3rd edition, 2013.</p></div>
+      <div class="card"><h3>Reference Book</h3><p>Paul Raj Ponniah, <em>Data Warehousing Fundamentals for IT Professionals</em>, 2012.</p></div>
+      <div class="card"><h3>Study Activities</h3><p>Prepare unit-wise notes, practise OLAP operations, compare schemas, and design a small warehouse model using a real-world case.</p></div>
+    </div>
+    <p class="note"><strong>Instructor note:</strong> Add links to your approved lecture slides, LMS, videos, and unit-wise PDFs before sharing this site with students.</p>
+    <a class="button" href="#schedule">View weekly schedule</a>
+  </section>
+
+  <section id="schedule">
+    <h2>Weekly Schedule</h2>
+    <p><small>Illustrative 15-week plan based on the five syllabus units. Adjust the week numbers to match the official academic calendar and holidays.</small></p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Week</th><th>Topics</th><th>Suggested learning activity</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Unit I: Introduction, components, operational database vs data warehouse</td><td>Concept map and comparison</td></tr>
+          <tr><td>2</td><td>Unit I: Architecture, three-tier architecture, autonomous and modern data warehouses</td><td>Draw and explain architecture</td></tr>
+          <tr><td>3</td><td>Unit II: ETL, ETL vs ELT, types of data warehouses</td><td>Build a sample ETL flow</td></tr>
+          <tr><td>4</td><td>Unit II: Design, modelling and delivery process</td><td>Case-based design discussion</td></tr>
+          <tr><td>5</td><td>Unit II: OLAP, OLTP vs OLAP, OLAP operations and types</td><td>Practise roll-up, drill-down, slice and dice</td></tr>
+          <tr><td>6</td><td>Unit III: Metadata, categories, repository and management challenges</td><td>Create a metadata catalogue</td></tr>
+          <tr><td>7</td><td>Unit III: Data marts, design, benefits and cost</td><td>Propose a departmental data mart</td></tr>
+          <tr><td>8</td><td>Unit III: Partitioning, normalization, vertical partition, row splitting and horizontal partition</td><td>Partitioning problem exercise</td></tr>
+          <tr><td>9</td><td>Unit IV: Dimensional and multidimensional modelling; data cube</td><td>Design a small data cube</td></tr>
+          <tr><td>10</td><td>Unit IV: Star, snowflake and fact constellation schemas</td><td>Compare schemas for a scenario</td></tr>
+          <tr><td>11</td><td>Unit IV: Schema definition, process architecture and database parallelism</td><td>Architecture diagram and quiz</td></tr>
+          <tr><td>12</td><td>Unit IV: Data warehouse tools</td><td>Tool comparison activity</td></tr>
+          <tr><td>13</td><td>Unit V: System configuration, scheduling, event and database managers</td><td>Map manager roles to tasks</td></tr>
+          <tr><td>14</td><td>Unit V: Backup and recovery; load, warehouse and query managers</td><td>Workflow and recovery scenario</td></tr>
+          <tr><td>15</td><td>Unit V: Tuning, testing and course revision</td><td>Mini-project presentation and revision quiz</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="assessment">
+    <h2>Assessment Plan</h2>
+    <p><small>The following is a proposed course-level plan, not an official marks distribution. Replace it with the department-approved scheme.</small></p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Assessment</th><th>Suggested evidence</th><th>Outcomes addressed</th></tr></thead>
+        <tbody>
+          <tr><td>Unit quizzes</td><td>Short quizzes after Units I–V</td><td>CO1, CO2, CO5</td></tr>
+          <tr><td>Assignments</td><td>Architecture diagram, ETL workflow, partitioning analysis</td><td>CO1, CO2, CO3</td></tr>
+          <tr><td>Case study / mini-project</td><td>Choose a schema and justify the design for a scenario</td><td>CO1, CO3, CO4</td></tr>
+          <tr><td>Presentation / viva</td><td>Explain design decisions and manager roles</td><td>CO4, CO5</td></tr>
+          <tr><td>Internal / end-semester examination</td><td>Use the institution's approved examination pattern</td><td>CO1–CO5</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Information</h2>
+    <p><strong>Course Instructor:</strong> [Enter faculty name]</p>
+    <p><strong>Department:</strong> Artificial Intelligence and Data Science, SRM VEC</p>
+    <p><strong>Email:</strong> [Enter official college email]</p>
+    <p><strong>Office hours:</strong> [Enter consultation day/time]</p>
+    <p class="note">Before publishing, replace all bracketed placeholders with verified information. Do not publish personal phone numbers or private student data.</p>
+  </section>
+</main>
+<footer><p> P I T201 · Data Warehousing | Artificial Intelligence and Data Science</p><small>Educational course website · Update content according to the approved syllabus and academic calendar.</small></footer>
+</body>
+</html>
